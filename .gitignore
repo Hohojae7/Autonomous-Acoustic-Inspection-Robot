@@ -1,0 +1,46 @@
+# ROS 2 colcon outputs
+build/
+install/
+log/
+**/build/
+**/install/
+**/log/
+
+# Python environments and caches
+.venv/
+venv/
+env/
+**/__pycache__/
+**/.pytest_cache/
+**/.mpl-cache/
+*.py[cod]
+
+# Downloaded AI model assets
+mediapipe_gesture_control/models/weights/*.task
+!mediapipe_gesture_control/models/weights/.gitkeep
+
+# Binary artifacts pending provenance / redistribution review
+src/sound_anomaly_node/models/*.joblib
+tools/opencr_updater/*.opencr
+tools/opencr_updater/opencr_ld_shell_*
+
+# Device-specific credentials
+**/wifi_config.h
+!**/wifi_config.example.h
+.env
+.env.*
+
+# Generated logs and recordings
+*.log
+mediapipe_gesture_control/logs/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local assistant configuration
+**/.agents/
+**/.claude/
+**/.codex/
