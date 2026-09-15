@@ -19,8 +19,7 @@ env/
 mediapipe_gesture_control/models/weights/*.task
 !mediapipe_gesture_control/models/weights/.gitkeep
 
-# Binary artifacts pending provenance / redistribution review
-src/sound_anomaly_node/models/*.joblib
+# Stock OpenCR artifacts pending provenance / redistribution review
 tools/opencr_updater/*.opencr
 tools/opencr_updater/opencr_ld_shell_*
 

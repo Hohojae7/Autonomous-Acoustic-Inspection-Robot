@@ -2,9 +2,12 @@
 
 Jetson Orin Nano에서 ROS 2 노드로 패키징할 수 있도록 준비한 기어박스 정상/비정상 감지 모델과 추론 코드입니다. 원음 WAV와 학습용 ZIP은 저장소에 넣지 않습니다.
 
+> **모델 상태:** 저장소에 포함한 SVM은 최종 제품용 모델이 아니라 프로젝트 시연에서 사용한 프로토타입입니다. 완성도와 현장 일반화에 한계가 있지만, 구현 결과와 실행 구조를 온전히 보존하기 위해 모델 파일도 함께 공개합니다.
+
 ## 포함 내용
 
 - `models/gearbox_svm_source.joblib` — Jetson에서 불러 쓸 학습 모델 (약 2 MB)
+- `models/gearbox_svm_runtime_sklearn_1_7.joblib` — 시연 환경의 scikit-learn 1.7 계열에서 사용한 호환 사본 (약 2 MB)
 - `models/*report.json` — 보류 평가 결과
 - `scripts/live_predict.py` — 마이크로 3초마다 실시간 판정
 - `scripts/predict_file.py` — WAV 파일 판정
