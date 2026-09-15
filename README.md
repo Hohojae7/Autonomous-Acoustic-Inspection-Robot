@@ -69,31 +69,31 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
     <tr>
       <td align="center" width="50%" valign="top">
         <img src="./docs/images/demo/01_autonomous_navigation.gif" width="100%" alt="TurtleBot3가 웨이포인트 구간을 자율 주행하는 시연" /><br />
-        <sub>AMCL로 위치를 추정하며 Nav2 웨이포인트 구간을 자율 주행합니다.</sub>
+        <sub>AMCL로 위치를 추정하며 Nav2 웨이포인트 구간을 자율 주행합니다</sub>
       </td>
       <td align="center" width="50%" valign="top">
         <img src="./docs/images/demo/02_mediapipe_gesture_control.gif" width="100%" alt="손가락 제스처로 TurtleBot3를 조작하는 시연" /><br />
-        <sub>카메라가 손 포즈를 인식해 TurtleBot3의 이동과 회전을 제어합니다.</sub>
+        <sub>카메라가 제스처를 인식해 TurtleBot3의 이동과 회전을 제어합니다</sub>
       </td>
     </tr>
     <tr>
-      <td align="center" width="50%" valign="top">
-        <img src="./docs/images/demo/03_gesture_auto_navigation_resume.gif" width="100%" alt="손 제스처로 자율주행 모드로 전환한 뒤 TurtleBot3가 시작점 A 방향으로 복귀하는 시연" /><br />
-        <sub>손 제스처로 AUTO 모드에 전환한 뒤 Nav2가 시작점 A 방향으로 복귀합니다.</sub>
-      </td>
       <td align="center" width="50%" valign="top">
         <img src="./docs/images/demo/04_abnormal_sound_red_led.gif" width="100%" alt="이상음 판정 후 빨간 LED가 점멸하는 시연" /><br />
-        <sub>MFCC · SVM 이상 판정 결과를 OpenCR의 빨간 외부 LED로 표시합니다.</sub>
+        <sub>MFCC · SVM 이상 판정 결과를 빨간색 외부 LED로 표시합니다</sub>
+      </td>
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/05_narrow_passage_gesture_control.gif" width="100%" alt="TurtleBot3가 제스처 제어로 컨베이어 벨트 아래 협소 통로를 통과하는 시연" /><br />
+        <sub>제스처 수동제어로 컨베이어 벨트 아래 협소 통로를 통과합니다</sub>
       </td>
     </tr>
     <tr>
       <td align="center" width="50%" valign="top">
-        <img src="./docs/images/demo/05_narrow_passage_gesture_control.gif" width="100%" alt="TurtleBot3가 제스처 제어로 테이블 아래 협소 통로를 통과하는 시연" /><br />
-        <sub>제스처 수동 제어로 테이블 아래 협소 통로를 한 번에 통과합니다.</sub>
+        <img src="./docs/images/demo/06_imu_glove_control.gif" width="100%" alt="ESP32와 MPU6050 장갑으로 TurtleBot3를 조작하는 시연" /><br />
+        <sub>손목 기울기 입력을 Wi-Fi로 전달해 TurtleBot3를 수동 조작합니다</sub>
       </td>
       <td align="center" width="50%" valign="top">
-        <img src="./docs/images/demo/06_imu_glove_control.gif" width="100%" alt="ESP32와 MPU6050 장갑으로 TurtleBot3를 조작하는 시연" /><br />
-        <sub>손목 기울기 입력을 Wi-Fi로 전달해 TurtleBot3를 수동 조작합니다.</sub>
+        <img src="./docs/images/demo/03_gesture_auto_navigation_resume.gif" width="100%" alt="손 제스처로 자율주행 모드로 전환한 뒤 TurtleBot3가 시작점으로 복귀하는 시연" /><br />
+        <sub>제스처로 자율주행 모드에 전환한 뒤 시작점으로 복귀합니다</sub>
       </td>
     </tr>
   </table>
@@ -105,16 +105,8 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
 
 <div align="center">
 
-#### SW 파일럿 2기 로보틱스 1팀 스마트팩토리 소음 탐지 및 순찰 로봇
-
 <a href="https://www.youtube.com/watch?v=Mjf2t31ZWa0">
-  <img src="https://img.youtube.com/vi/Mjf2t31ZWa0/hqdefault.jpg" width="70%" alt="AAIR 프로젝트 시연 영상" />
-</a>
-
-<br />
-
-<a href="https://www.youtube.com/watch?v=Mjf2t31ZWa0">
-  <img src="https://img.shields.io/badge/YouTube-시연_영상_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube에서 시연 영상 보기" />
+  <img src="./docs/images/youtube-demo-thumbnail.png" width="70%" alt="YouTube에서 AAIR 프로젝트 시연 영상 재생" />
 </a>
 
 </div>
