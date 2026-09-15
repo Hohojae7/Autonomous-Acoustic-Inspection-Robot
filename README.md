@@ -12,6 +12,7 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
   <img src="https://img.shields.io/badge/ROBOTIS-TurtleBot3_Burger-00A6D6?style=for-the-badge" alt="TurtleBot3 Burger" />
   <img src="https://img.shields.io/badge/NVIDIA-Jetson_Orin_Nano-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Jetson Orin Nano" />
   <img src="https://img.shields.io/badge/Acoustic_AI-MFCC_%2B_SVM-F5A623?style=for-the-badge" alt="MFCC and SVM" />
+  <img src="https://img.shields.io/badge/Gesture_AI-MediaPipe-0097A7?style=for-the-badge&logo=mediapipe&logoColor=white" alt="MediaPipe Gesture Control" />
 </p>
 
 <a href="https://www.youtube.com/watch?v=Mjf2t31ZWa0">
@@ -24,17 +25,15 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
 
 ## 1. 프로젝트 소개
 
-> AAIR는 **자율순찰**, **설비음의 실시간 정상·이상 판정**, **작업자 수동 개입**, **결과 알림**을 하나의 TurtleBot3 플랫폼에서 운용한 프로젝트입니다.<br />
-> 작업자의 반복적인 위험 구역 접근과 청감 중심의 설비 점검을 줄이고, 동일한 절차와 기준으로 1차 점검을 수행하는 것을 목표로 합니다.
+> AAIR는 TurtleBot3가 협소·위험 구역을 자율 순찰하며 설비음을 수집·분석하고, 정상·이상 상태를 현장에 알리는 산업 점검 로봇입니다.<br />
+> 자율순찰과 작업자 수동 개입을 하나의 운용 흐름으로 연결해, 사람이 현장에 들어가기 전 반복 가능한 1차 점검을 수행합니다.
 
-산업 현장에는 작업자가 직접 접근하기 어렵거나 장시간 머물기 부담스러운 협소 구역이 존재합니다. AAIR는 TurtleBot3 Burger에 자율주행, 음향 AI, 수동 보조제어를 결합하여 작업자가 현장에 들어가기 전에 설비 상태를 먼저 확인할 수 있도록 구성했습니다.
+다음과 같은 문제를 대상으로 합니다.
 
-| 현장 문제 | 시스템 대응 | 구현 방식 |
-| --- | --- | --- |
-| 협소·위험 구역의 반복적인 직접 점검 | 작업자의 현장 노출 시간 감소 | SLAM 지도와 Nav2 기반 Waypoint 자율순찰 |
-| 작업자마다 달라질 수 있는 점검 절차 | 반복 가능한 순찰·점검 흐름 구성 | 지정 경로 순찰과 동일한 음향 판정 Pipeline 운용 |
-| 고소음 환경의 청감 중심 판단 | 설비음 기반 1차 이상 판정 보조 | Microphone, MFCC 특징 추출, SVM 이진 분류 |
-| 자율주행 예외 상황과 좁은 통로 | 작업자 수동 개입과 자율주행 복귀 | MediaPipe 손 제스처, IMU 장갑, AUTO/MANUAL 전환 |
+- 협소·위험 구역을 작업자가 반복해서 직접 점검해야 하는 문제
+- 작업자마다 순찰·점검 절차가 달라져 일관성을 유지하기 어려운 문제
+- 고소음 환경에서 청감만으로 설비 이상 여부를 일관되게 판단하기 어려운 문제
+- 좁은 통로와 자율주행 예외 상황에서 자동 운용만으로 대응하기 어려운 문제
 
 ---
 
