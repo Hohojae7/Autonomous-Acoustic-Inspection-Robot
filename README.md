@@ -62,37 +62,44 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
 
 ## 프로젝트 시연
 
-### 모듈 별 기능
+### 모듈별 기능
 
-<!-- GIF 확보 후 각 셀의 안내 문구를 img 태그로 교체합니다. -->
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="50%">
-        <br />
-        <strong>SLAM · Nav2 자율순찰</strong><br />
-        <sub>시연 GIF 추가 예정</sub>
-        <br /><br />
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/01_autonomous_navigation.gif" width="100%" alt="TurtleBot3가 웨이포인트 구간을 자율 주행하는 시연" /><br />
+        <strong>SLAM · AMCL · Nav2 자율주행</strong><br />
+        <sub>AMCL로 위치를 추정하며 Nav2 웨이포인트 구간을 자율 주행합니다.</sub>
       </td>
-      <td align="center" width="50%">
-        <br />
-        <strong>MFCC · SVM 이상음 판정</strong><br />
-        <sub>시연 GIF 추가 예정</sub>
-        <br /><br />
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/02_mediapipe_gesture_control.gif" width="100%" alt="손가락 제스처로 TurtleBot3를 조작하는 시연" /><br />
+        <strong>MediaPipe 손 제스처 제어</strong><br />
+        <sub>카메라가 손 포즈를 인식해 TurtleBot3의 이동과 회전을 제어합니다.</sub>
       </td>
     </tr>
     <tr>
-      <td align="center" width="50%">
-        <br />
-        <strong>MediaPipe 제스처 제어</strong><br />
-        <sub>시연 GIF 추가 예정</sub>
-        <br /><br />
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/03_normal_sound_green_led.gif" width="100%" alt="정상음 판정 후 녹색 LED가 점멸하는 시연" /><br />
+        <strong>정상음 판정 · Green LED</strong><br />
+        <sub>MFCC · SVM 정상 판정 결과를 OpenCR의 녹색 외부 LED로 표시합니다.</sub>
       </td>
-      <td align="center" width="50%">
-        <br />
-        <strong>ESP32 · MPU6050 IMU 장갑</strong><br />
-        <sub>시연 GIF 추가 예정</sub>
-        <br /><br />
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/04_abnormal_sound_red_led.gif" width="100%" alt="이상음 판정 후 빨간 LED가 점멸하는 시연" /><br />
+        <strong>이상음 판정 · Red LED</strong><br />
+        <sub>MFCC · SVM 이상 판정 결과를 OpenCR의 빨간 외부 LED로 표시합니다.</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/05_narrow_passage_gesture_control.gif" width="100%" alt="TurtleBot3가 제스처 제어로 테이블 아래 협소 통로를 통과하는 시연" /><br />
+        <strong>MediaPipe 협소 구간 주행</strong><br />
+        <sub>제스처 수동 제어로 테이블 아래 협소 통로를 한 번에 통과합니다.</sub>
+      </td>
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/06_imu_glove_control.gif" width="100%" alt="ESP32와 MPU6050 장갑으로 TurtleBot3를 조작하는 시연" /><br />
+        <strong>ESP32 · MPU6050 Wi-Fi 장갑</strong><br />
+        <sub>손목 기울기 입력을 Wi-Fi로 전달해 TurtleBot3를 수동 조작합니다.</sub>
       </td>
     </tr>
   </table>
