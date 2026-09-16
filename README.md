@@ -140,6 +140,14 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
         <sub>제스처로 자율주행 모드에 전환한 뒤 시작점으로 복귀합니다</sub>
       </td>
     </tr>
+    <tr>
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/07_obstacle_detection_reverse.gif" width="100%" alt="RViz에서 자율주행 중 장애물을 감지한 TurtleBot3가 후진하는 시연" />
+      </td>
+      <td align="center" width="50%" valign="top">
+        <img src="./docs/images/demo/08_path_replanning_resume.gif" width="100%" alt="RViz에서 경로를 재생성한 TurtleBot3가 자율주행을 재개하는 시연" />
+      </td>
+    </tr>
   </table>
 </div>
 
