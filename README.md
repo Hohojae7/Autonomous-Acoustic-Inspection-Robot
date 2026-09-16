@@ -181,13 +181,40 @@ ROS 2 Topic과 Action을 중심으로 Navigation, Patrol Control, Manual Control
 
 ## 6. 담당 역할
 
-> 팀원별 담당 기능과 통합 범위는 팀 협의 후 작성할 예정입니다.
-
-<!--
-| 이름 | 담당 역할 |
-| --- | --- |
-| 팀원 | 담당 기능 및 산출물 |
--->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>C</strong><br /><br />
+      - <strong>파트:</strong> 비전 / 제스처 제어<br />
+      - <strong>담당:</strong> MediaPipe 기반 손 제스처 수동제어와 웹 모니터링 구현<br />
+      - <strong>주요 기능:</strong> 카메라 입력, 손 랜드마크 분석, 제스처 명령 변환, Flask 영상·상태 API 제공<br />
+      - <strong>비고:</strong> 손 미검출 시 정지하는 Fail-safe와 협소 구간 수동주행 지원
+    </td>
+    <td width="50%" valign="top">
+      <strong>B</strong><br /><br />
+      - <strong>파트:</strong> 음향 AI / 이상음 감지<br />
+      - <strong>담당:</strong> 설비음 수집부터 정상·이상 판정까지의 음향 분석 기능 구현<br />
+      - <strong>주요 기능:</strong> 마이크 입력, 음원 전처리, MFCC 특징 추출, SVM 분류, 판정 결과 Topic 발행<br />
+      - <strong>비고:</strong> 기어박스 음향 데이터 학습·평가 및 Terminal·LED 출력 연동
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>A</strong><br /><br />
+      - <strong>파트:</strong> 자율주행 / 순찰 제어<br />
+      - <strong>담당:</strong> SLAM·Nav2 기반 지도 작성, 위치 추정 및 Waypoint 순찰 구현<br />
+      - <strong>주요 기능:</strong> SLAM Toolbox 지도 생성, AMCL 위치 추정, Waypoint 관리, 자율주행 및 순찰 복귀<br />
+      - <strong>비고:</strong> Odom·TF 및 주행 좌표를 조정하고 실제 주행 환경 안정화
+    </td>
+    <td width="50%" valign="top">
+      <strong>D</strong><br /><br />
+      - <strong>파트:</strong> 임베디드 / 통합 제어<br />
+      - <strong>담당:</strong> ESP32·MPU6050 IMU 장갑 제작 및 다중 제어 입력 통합<br />
+      - <strong>주요 기능:</strong> Roll·Pitch 측정, Wi-Fi UDP 전송, 장갑 주행 명령 변환, 제어 MUX 및 AUTO/MANUAL 전환<br />
+      - <strong>비고:</strong> 통신 중단 시 정지 로직과 전체 운용 시나리오 통합 테스트
+    </td>
+  </tr>
+</table>
 
 ---
 
