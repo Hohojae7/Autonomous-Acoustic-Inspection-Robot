@@ -23,6 +23,45 @@ TurtleBot3가 지정 구역을 자율 순찰하고 설비음을 수집·분석�
 
 ---
 
+## Contributors
+
+<div align="center">
+  <table width="100%">
+    <tr>
+      <td align="center" width="25%">
+        <a href="https://github.com/kakabab12">
+          <img src="https://github.com/kakabab12.png" width="120px" alt="이지용 GitHub 프로필" /><br />
+          <sub><b>이지용</b></sub>
+        </a><br />
+        VISION
+      </td>
+      <td align="center" width="25%">
+        <a href="https://github.com/Combatroad">
+          <img src="https://github.com/Combatroad.png" width="120px" alt="은대영 GitHub 프로필" /><br />
+          <sub><b>은대영</b></sub>
+        </a><br />
+        AUDIO
+      </td>
+      <td align="center" width="25%">
+        <a href="https://github.com/Hohojae7">
+          <img src="https://github.com/Hohojae7.png" width="120px" alt="장재호 GitHub 프로필" /><br />
+          <sub><b>장재호</b></sub>
+        </a><br />
+        NAVIGATION
+      </td>
+      <td align="center" width="25%">
+        <a href="https://github.com/hanmin0309">
+          <img src="https://github.com/hanmin0309.png" width="120px" alt="김한민 GitHub 프로필" /><br />
+          <sub><b>김한민</b></sub>
+        </a><br />
+        EMBEDDED
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## 1. 프로젝트 소개
 
 > AAIR는 TurtleBot3가 협소·위험 구역을 자율 순찰하며 설비음을 수집·분석하고, 정상·이상 상태를 현장에 알리는 산업 점검 로봇입니다.<br />
